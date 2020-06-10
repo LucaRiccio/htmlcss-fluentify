@@ -1,7 +1,8 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 .clearfix {
@@ -12,21 +13,53 @@
 
 .container {
   width: 70%;
-  height: 100%;
-  border: 3px solid black;
   margin: 0 auto;
   max-width: 1200px;
   background-color: darkgrey;
 }
 
+.container.background {
+  background-image: url('https://cdn.fluentify.com/bundles/fluentifypublic/images/r4b/01/oldman.png');
+  background-color: #0d325a;
+  background-size: cover;
+  color: white;
+}
+
+#logo {
+  line-height: 70px;
+  display: inline-block;
+}
+
 .blu {
-  height: 400px;
   background-color: #0d325a;
 }
 
 nav {
   height: 70px;
-  background-color: powderblue;
+  display: inline-block;
+}
+
+.barra, ul, li {
+  display: inline-block;
+  font-size: 11px;
+  margin-left: 10px;
+}
+
+.login {
+  display: inline-block;
+  font-size: 11px;
+  position: relative;
+  left: 100px;
+}
+
+input {
+  font-size: 11px;
+  background-color: #7fb802;
+  border-radius: 5px;
+  border: 1px solid #7fb802;
+  padding: 5px;
+  color: white;
+  margin-left: 10px;
 }
 
 .banner {
@@ -36,12 +69,42 @@ nav {
 .testo-banner {
   width: 50%;
   height: 100%;
-  border: 1px solid black;
+  position: relative;
+}
+
+.titolo-banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-100%,-50%);
+}
+
+#specialbutton {
+  margin-left: 0;
+  margin-top: 10px;
+  padding: 15px;
 }
 
 .grigio {
   height: 100px;
   background-color: #d3d3d3;
+}
+
+.container-testo {
+  text-align: center;
+  position: relative;
+}
+
+.testo {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,50%);
+}
+
+.testo h3{
+  color: #727272;
 }
 
 .bianco {
@@ -51,7 +114,37 @@ nav {
 
 .box {
   width: 33.3333%;
-  height: 100%;
-  border: 1px solid black;
   float: left;
+}
+
+.iconabox {
+  text-align: center;
+  margin:auto;
+  margin-top: 30px;
+}
+
+.iconabox h2{
+  color: #7fb802;
+}
+
+.iconabox p{
+  color: #727272;
+  font-weight: bold;
+  margin-top: 15px;
+  text-align: center;
+}
+
+#iconasx{
+  height: 215px;
+  width: 215px;
+}
+
+#iconadx{
+  height: 215px;
+  width: 215px;
+}
+
+hr{
+  width: 70px;
+  margin: auto;
 }
